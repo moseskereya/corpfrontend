@@ -29,7 +29,7 @@ const DefaultLayout = () => {
   return (
     <div id="defaultLayout">
             <aside>
-            <Link to="/darshbord">Darshbord</Link>
+            <Link to="/">Darshbord</Link>
             <Link to="/contact">Contact</Link>
             <Link to="todoadd">Add Todo</Link>
             </aside>
