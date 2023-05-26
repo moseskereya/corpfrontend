@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         children: [
           {
             path: '/',
-            element: <Navigate to="/"/>
+            element: <Navigate to="/darshbord"/>
             },
            {
              path: '/contact',

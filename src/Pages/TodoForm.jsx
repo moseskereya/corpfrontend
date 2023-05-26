@@ -39,7 +39,7 @@ export default function Dashord() {
         const response = await axiosClient.post('/todos', payload, config);
         console.log(response.data);
         toast.success('Todo Created Successfully');
-        navigate('/darshbord');
+        navigate('/');
         } catch (error) {
             if (error.response) {
             const { status, data } = error.response;
