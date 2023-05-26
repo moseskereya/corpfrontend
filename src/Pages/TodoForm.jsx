@@ -7,8 +7,10 @@ export default function Dashord() {
   const textRef = createRef()
   const token = localStorage.getItem('ACCESS_TOKEN');
     const [setTodo] = useState([]);
+    const [collaborators, setCollaborators] = useState([]);
+
     const navigate = useNavigate();
-    
+
     useEffect(() => {
       const config = {
           headers: {
@@ -22,8 +24,18 @@ export default function Dashord() {
         })
         .catch((err) => {
         console.log('Error from Todo', err);
-      });
+     });
+
+     axiosClient.post('/collaborators', config)
+         .then((response) => {
+             setCollaborators(response.data);
+         })
+         .catch((err) => {
+          console.log('Error from Todo', err);
+         });
     }, [])
+
+    console.log(collaborators)
 
     
   const onSubmit = async (ev) => {

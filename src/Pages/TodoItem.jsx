@@ -23,14 +23,15 @@ function TodoItem({ todo, id }) {
      }
  }
 
-  return (
-    <div className='todo'>
-      <div>{new Date(todo.createdAt).toLocaleString('en-US')}</div>
-          <h5>{todo.text}</h5>
-      <button onClick={() => OnDelete()} className='close'>
-        X
-      </button>
-    </div>
+    return (
+ 
+         <div className='todo'>
+            <div>{new Date(todo.createdAt).toLocaleString('en-US')}</div>
+                <h5>{todo.text}</h5>
+            <button onClick={() => OnDelete()} className='close'>
+                X
+            </button>
+          </div>
   )
 }
 

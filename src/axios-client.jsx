@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Navigate } from "react-router-dom";
 const axiosClient = axios.create({
-  baseURL: "https://lazy-puce-fossa-belt.cyclic.app/api"
+  baseURL: "http://localhost:8080/api"
 })
 
 axiosClient.interceptors.request.use((config) => {
@@ -25,3 +25,7 @@ axiosClient.interceptors.response.use((response) => {
 })
 
 export default axiosClient
+
+
+// http://localhost:8080/
+//https://lazy-puce-fossa-belt.cyclic.app/api

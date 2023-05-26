@@ -400,6 +400,7 @@ table>tbody>tr>td {
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -415,5 +416,14 @@ table>tbody>tr>td {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+    }
+    .login-signup-form .form {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 500px;
+        padding: 34px;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
     }
 }
