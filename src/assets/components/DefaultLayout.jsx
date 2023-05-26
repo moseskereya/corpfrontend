@@ -53,7 +53,10 @@ const DefaultLayout = () => {
             
                 </header> 
                 <main>
-                    <Outlet/>
+                  <Outlet />
+                  <div className="add_new">
+                      <Link className="link" to="/todoadd">+</Link>
+                  </div>
                 </main>
             </div>
         </div>
